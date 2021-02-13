@@ -21,9 +21,9 @@ F 0 "P1" H 7350 3915 50  0000 C CNN
 F 1 "TPS61098x" H 7350 3824 50  0000 C CNN
 F 2 "HH_TexasInstruments:TPS61098x" H 7350 3500 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps610985" H 7350 3500 50  0001 C CNN
-F 4 "296-43747-1-ND" H 7350 3500 50  0001 C CNN "Digi-Key Part Number"
+F 4 "296-48759-6-ND" H 7350 3500 50  0001 C CNN "Digi-Key Part Number"
 F 5 "Texas Instruments" H 7350 3500 50  0001 C CNN "Manufacturer"
-F 6 "TPS610985DSET" H 7350 3500 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TPS61098DSE" H 7350 3500 50  0001 C CNN "Manufacturer Part Number"
 F 7 "IC REG DL BOOST/LNR SYNC 6WSON" H 7350 3500 50  0001 C CNN "Description"
 	1    7350 3500
 	1    0    0    -1  
@@ -73,9 +73,13 @@ L Device:L L1
 U 1 1 60173BBD
 P 6350 3350
 F 0 "L1" V 6540 3350 50  0000 C CNN
-F 1 "4.7µF" V 6449 3350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6350 3350 50  0001 C CNN
-F 3 "~" H 6350 3350 50  0001 C CNN
+F 1 "4.7µH" V 6449 3350 50  0000 C CNN
+F 2 "Inductor_SMD:L_1008_2520Metric" H 6350 3350 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/VLF252010MT-CA_Series.pdf" H 6350 3350 50  0001 C CNN
+F 4 "445-174072-1-ND" V 6350 3350 50  0001 C CNN "Digi-Key Part Number"
+F 5 "TDK Corporation" V 6350 3350 50  0001 C CNN "Manufacturer"
+F 6 "VLF252010MT-4R7M-CA" V 6350 3350 50  0001 C CNN "Manufacturer Part Number"
+F 7 "FIXED IND 4.7UH 950MA 300 MOHM" V 6350 3350 50  0001 C CNN "Description"
 	1    6350 3350
 	0    -1   -1   0   
 $EndComp
