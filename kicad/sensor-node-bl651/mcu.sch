@@ -495,7 +495,7 @@ NoConn ~ 6600 2250
 NoConn ~ 6600 2850
 NoConn ~ 6600 2950
 Text HLabel 4800 3350 0    50   Input ~ 0
-UVLO
+~SNOOZE
 $Comp
 L HH_Hochreiner:swd_connector S2
 U 1 1 60246EFA
