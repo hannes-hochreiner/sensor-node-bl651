@@ -305,21 +305,6 @@ F 3 "~" H 9850 2550 50  0001 C CNN
 $EndComp
 NoConn ~ 6600 3250
 $Comp
-L Device:Polyfuse F3
-U 1 1 601D34D6
-P 8600 6250
-F 0 "F3" V 8375 6250 50  0000 C CNN
-F 1 "Polyfuse" V 8466 6250 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 8650 6050 50  0001 L CNN
-F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcm-series.pdf" H 8600 6250 50  0001 C CNN
-F 4 "507-0ZCM0002FF2GCT-ND" V 8600 6250 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Bel Fuse Inc." V 8600 6250 50  0001 C CNN "Manufacturer"
-F 6 "0ZCM0002FF2G" V 8600 6250 50  0001 C CNN "Manufacturer Part Number"
-F 7 "PTC RESET FUSE 60V 20MA 0603" V 8600 6250 50  0001 C CNN "Description"
-	1    8600 6250
-	0    1    1    0   
-$EndComp
-$Comp
 L HH_DiodesIncorporated:DMP2008UFG-7 U1
 U 1 1 601D4951
 P 7850 5850
@@ -504,11 +489,7 @@ Text Notes 10150 1650 2    100  ~ 20
 V_bat Measurement
 Wire Wire Line
 	8400 5700 9300 5700
-Wire Wire Line
-	8300 6250 8450 6250
 Connection ~ 8300 6250
-Wire Wire Line
-	8750 6250 8900 6250
 NoConn ~ 6600 3050
 NoConn ~ 6600 2250
 NoConn ~ 6600 2850
@@ -548,4 +529,6 @@ $EndComp
 Wire Wire Line
 	1650 4850 1150 4850
 NoConn ~ 4800 3650
+Wire Wire Line
+	8300 6250 8900 6250
 $EndSCHEMATC

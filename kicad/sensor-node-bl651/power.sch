@@ -150,21 +150,6 @@ F 7 "MOSFET P-CH 20V 14A POWERDI" H 4450 3500 50  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Polyfuse F1
-U 1 1 6017967B
-P 3650 4250
-F 0 "F1" V 3425 4250 50  0000 C CNN
-F 1 "Polyfuse" V 3516 4250 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 3700 4050 50  0001 L CNN
-F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcm-series.pdf" H 3650 4250 50  0001 C CNN
-F 4 "507-0ZCM0002FF2GCT-ND" V 3650 4250 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Bel Fuse Inc." V 3650 4250 50  0001 C CNN "Manufacturer"
-F 6 "0ZCM0002FF2G" V 3650 4250 50  0001 C CNN "Manufacturer Part Number"
-F 7 "PTC RESET FUSE 60V 20MA 0603" V 3650 4250 50  0001 C CNN "Description"
-	1    3650 4250
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:Battery_Cell BT1
 U 1 1 6017A79B
 P 3050 3750
@@ -244,10 +229,6 @@ Wire Wire Line
 	6550 4250 8050 4250
 Wire Wire Line
 	3050 3350 3950 3350
-Wire Wire Line
-	3050 4250 3500 4250
-Wire Wire Line
-	3800 4250 5000 4250
 Connection ~ 5000 4250
 $Comp
 L Device:R R6
@@ -264,4 +245,6 @@ Wire Wire Line
 	5000 4100 5000 4250
 Text HLabel 5000 3350 1    50   Input ~ 0
 UVLO
+Wire Wire Line
+	3050 4250 5000 4250
 $EndSCHEMATC
