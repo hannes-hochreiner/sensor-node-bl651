@@ -108,3 +108,33 @@ LSM303AGR
 
 This sensor worked fine with similar designs.
 Due to the internal pull-ups of the nRF52810, no external pull-ups are required.
+
+Tests
+=====
+
++-----------------------------+--------+
+|                        Unit | V1.0.0 |
++=============================+========+
+|                       Power |   OK   |
++-----------------------------+--------+
+| Reverse polarity protection |   OK   |
++-----------------------------+--------+
+|     Over current protection | Note 1 |
++-----------------------------+--------+
+|    Under voltage protection |   tbt  |
++-----------------------------+--------+
+|                       SHT4x |   tbt  |
++-----------------------------+--------+
+|                   LSM303AGR |   tbt  |
++-----------------------------+--------+
+|                  Connectors | Note 2 |
++-----------------------------+--------+
+
+**Note 1**
+
+Over current protection did not work as intended as the resistance of the fuses was too high to start with.
+
+**Note 2**
+
+The footprints of both connectors had problems (although different ones).
+It was possible to scrape the pads of the programming connector free and subsequently program the module.
