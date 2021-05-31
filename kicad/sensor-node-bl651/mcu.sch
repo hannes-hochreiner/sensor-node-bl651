@@ -477,12 +477,12 @@ U 1 1 60246EFA
 P 9900 5800
 F 0 "S2" H 9900 6165 50  0000 C CNN
 F 1 "swd_connector" H 9900 6074 50  0000 C CNN
-F 2 "HH_Hochreiner:swd_connector" H 9900 5800 50  0001 C CNN
-F 3 "http://suddendocs.samtec.com/catalog_english/clp_sm.pdf" H 9900 5800 50  0001 C CNN
-F 4 "SAM10974-ND" H 9900 5800 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Samtec Inc." H 9900 5800 50  0001 C CNN "Manufacturer"
-F 6 "CLP-103-02-G-D-BE" H 9900 5800 50  0001 C CNN "Manufacturer Part Number"
-F 7 "CONN RCPT 6POS 0.05 GOLD SMD" H 9900 5800 50  0001 C CNN "Description"
+F 2 "HH_Hochreiner:SWD_BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN
+F 3 "https://gct.co/files/drawings/bd050.pdf" H 9900 5800 50  0001 C CNN
+F 4 "2073-BD050-06-A-0-0500-L-D-ND" H 9900 5800 50  0001 C CNN "Digi-Key Part Number"
+F 5 "GCT" H 9900 5800 50  0001 C CNN "Manufacturer"
+F 6 "BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN "Manufacturer Part Number"
+F 7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" H 9900 5800 50  0001 C CNN "Description"
 	1    9900 5800
 	1    0    0    -1  
 $EndComp
