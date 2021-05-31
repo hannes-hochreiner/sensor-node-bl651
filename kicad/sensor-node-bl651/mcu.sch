@@ -426,27 +426,11 @@ Wire Wire Line
 Connection ~ 9850 2850
 Wire Wire Line
 	9850 2400 9850 2250
-Text Label 8800 2850 2    50   ~ 0
-V_sen1
 Text Label 8800 3400 2    50   ~ 0
-V_sen2
-Connection ~ 9650 2850
+V_sen
 Connection ~ 9650 3400
 Text Label 5700 4050 3    50   ~ 0
-V_sen2
-Text Label 5600 4050 3    50   ~ 0
-V_sen1
-$Comp
-L Device:C C6
-U 1 1 6021C849
-P 9400 3850
-F 0 "C6" V 9148 3850 50  0000 C CNN
-F 1 "0.1µF 0603 16V" V 9239 3850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3700 50  0001 C CNN
-F 3 "~" H 9400 3850 50  0001 C CNN
-	1    9400 3850
-	-1   0    0    1   
-$EndComp
+V_sen
 $Comp
 L Device:C C5
 U 1 1 6021D148
@@ -461,13 +445,6 @@ $EndComp
 Wire Wire Line
 	8800 3400 9000 3400
 Wire Wire Line
-	8800 2850 9400 2850
-Wire Wire Line
-	9400 3700 9400 2850
-Connection ~ 9400 2850
-Wire Wire Line
-	9400 2850 9650 2850
-Wire Wire Line
 	9000 3700 9000 3400
 Connection ~ 9000 3400
 Wire Wire Line
@@ -479,8 +456,6 @@ Wire Wire Line
 Wire Wire Line
 	9850 3800 9850 4250
 Connection ~ 9400 4250
-Wire Wire Line
-	9400 4250 9400 4000
 Wire Wire Line
 	9400 4250 9000 4250
 Wire Wire Line
@@ -531,4 +506,5 @@ Wire Wire Line
 NoConn ~ 4800 3650
 Wire Wire Line
 	8300 6250 8900 6250
+NoConn ~ 5600 4050
 $EndSCHEMATC
