@@ -94,6 +94,11 @@ One of the GPIO pins of the MCU was connected to the gate of the MOSFET used to 
 The idea is that the MCU can pull the pin high to cut the power supply.
 Given that the body diode forward voltage is 0.7 and the gate-source threshold is 0.4 V, it should not be possible to open the MOSFET below 1.1 V.
 
+Connectors
+----------
+
+Minimum pin length for the bottom entry connectors is 3.15 mm.
+
 Sensors
 =======
 
@@ -138,3 +143,9 @@ Over current protection did not work as intended as the resistance of the fuses 
 
 The footprints of both connectors had problems (although different ones).
 It was possible to scrape the pads of the programming connector free and subsequently program the module.
+
+TODOs
+=====
+
+* Update SWD connector to align with the sensor connector in pin numbering sequence and VDD and GND positions.
+* Add pull-up/down to snooze line.
