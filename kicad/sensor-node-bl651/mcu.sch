@@ -486,25 +486,25 @@ F 7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" H 9900 5800 50  0001 C CNN "Description"
 	1    9900 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L HH_Hochreiner:sensor_connector_keyed SC1
-U 1 1 6025A1AC
-P 2300 4750
-F 0 "SC1" H 2300 5315 50  0000 C CNN
-F 1 "sensor_connector_keyed" H 2300 5224 50  0000 C CNN
-F 2 "HH_Hochreiner:sensor_connector_M50-3150542R_keyed" H 2300 4750 50  0001 C CNN
-F 3 "https://cdn.harwin.com/pdfs/C029XX_M50_and_M52_Series_Connectors.pdf" H 2300 4750 50  0001 C CNN
-F 4 "952-3493-1-ND" H 2300 4750 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Harwin Inc." H 2300 4750 50  0001 C CNN "Manufacturer"
-F 6 "M50-3150542R" H 2300 4750 50  0001 C CNN "Manufacturer Part Number"
-F 7 "CONN RCPT 10POS 0.05 GOLD SMD" H 2300 4750 50  0001 C CNN "Description"
-	1    2300 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1650 4850 1150 4850
 NoConn ~ 4800 3650
 Wire Wire Line
 	8300 6250 8900 6250
 NoConn ~ 5600 4050
+$Comp
+L HH_Hochreiner:sensor_connector_keyed SC?
+U 1 1 60B6C2F4
+P 2300 4750
+F 0 "SC?" H 2300 5315 50  0000 C CNN
+F 1 "sensor_connector_keyed" H 2300 5224 50  0000 C CNN
+F 2 "HH_Hochreiner:Sensor-Connector_BD050-10-A-0-0500-L-D" H 2300 4750 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/C029XX_M50_and_M52_Series_Connectors.pdf" H 2300 4750 50  0001 C CNN
+F 4 "2073-BD050-10-A-0-0500-L-D-ND" H 2300 4750 50  0001 C CNN "Digi-Key Part Number"
+F 5 "GCT" H 2300 4750 50  0001 C CNN "Manufacturer"
+F 6 "BD050-10-A-0-0500-L-D" H 2300 4750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "10W,1.27MM SOCKET,DIL, SMT,L/PRO" H 2300 4750 50  0001 C CNN "Description"
+	1    2300 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
