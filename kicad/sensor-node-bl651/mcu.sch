@@ -465,7 +465,6 @@ V_bat Measurement
 Wire Wire Line
 	8400 5700 9300 5700
 Connection ~ 8300 6250
-NoConn ~ 6600 3050
 NoConn ~ 6600 2250
 NoConn ~ 6600 2850
 NoConn ~ 6600 2950
@@ -507,4 +506,6 @@ F 7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" H 9900 5800 50  0001 C CNN "Description"
 	1    9900 5800
 	1    0    0    -1  
 $EndComp
+Text HLabel 6600 3050 2    50   Input ~ 0
+INT_M_XL
 $EndSCHEMATC
