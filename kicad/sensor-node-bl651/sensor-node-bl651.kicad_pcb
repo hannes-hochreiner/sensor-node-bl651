@@ -226,6 +226,11 @@
       (net 7 /mcu/~SPI_CS))
     (pad 6 smd rect (at 0 2) (size 0.65 2) (layers B.Cu B.Paste B.Mask)
       (net 8 /mcu/SPI_CLK))
+    (model /home/hannes/Repository/kicad/models/GCT/BD050-10.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module HH_Hochreiner:SWD_BD050-06-A-0-0500-L-D (layer B.Cu) (tedit 60B870DB) (tstamp 60B8DF7C)
@@ -257,6 +262,11 @@
       (net 12 /mcu/SWDIO))
     (pad 4 smd rect (at 0 2 180) (size 0.65 2) (layers B.Cu B.Paste B.Mask)
       (net 13 /mcu/SWDCLK))
+    (model /home/hannes/Repository/kicad/models/GCT/BD050-06.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Package_SO:MSOP-10_3x3mm_P0.5mm (layer B.Cu) (tedit 5A02F25C) (tstamp 60B3EEBC)
@@ -313,6 +323,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/TexasInstruments/TPS6031x.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 60B3EBF7)
@@ -349,6 +364,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 60B3EBE6)
@@ -381,6 +401,11 @@
     (pad 1 smd roundrect (at -0.775 0 270) (size 0.9 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 17 "Net-(C3-Pad1)"))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -462,6 +487,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module HH_STMicroelectronics:LSM303AGR (layer B.Cu) (tedit 6021993F) (tstamp 6021A80B)
@@ -500,6 +530,11 @@
       (net 11 /mcu/VDD))
     (pad 1 smd rect (at -0.7625 0.75) (size 0.275 0.25) (layers B.Cu B.Paste B.Mask)
       (net 2 /sensors/SCL))
+    (model /home/hannes/Repository/kicad/models/STMicroelectronics/LSM303AGR.step
+      (offset (xyz -1 -1 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 6021AD72)
@@ -532,6 +567,11 @@
     (pad 1 smd roundrect (at -0.775 0) (size 0.9 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 11 /mcu/VDD))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -572,6 +612,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 6021AE32)
@@ -608,6 +653,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 6021A53C)
@@ -640,6 +690,11 @@
     (pad 1 smd roundrect (at -0.775 0) (size 0.9 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 18 "Net-(C7-Pad1)"))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -824,6 +879,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 60202961)
@@ -856,6 +916,11 @@
     (pad 1 smd roundrect (at -0.825 0 180) (size 0.8 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -896,6 +961,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 60202818)
@@ -928,6 +998,11 @@
     (pad 1 smd roundrect (at -0.775 0 270) (size 0.9 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1029,6 +1104,11 @@
     (pad 1 smd rect (at -1.25 0 270) (size 1 1.8) (layers B.Cu B.Paste B.Mask)
       (net 10 "Net-(BL1-Pad25)"))
     (model ${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/crystal_3_2x1_5mm.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1143,6 +1223,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/R_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_2.7mm_M2.5_Pad_Via (layer F.Cu) (tedit 56DDBBFF) (tstamp 6017A428)
@@ -1207,6 +1292,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 6017A3E5)
@@ -1239,6 +1329,11 @@
     (pad 1 smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 10 "Net-(BL1-Pad25)"))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1279,6 +1374,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 6017A390)
@@ -1311,6 +1411,11 @@
     (pad 1 smd roundrect (at -0.775 0) (size 0.9 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
       (net 11 /mcu/VDD))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model /home/hannes/Repository/kicad/models/generic/C_0603.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
