@@ -143,35 +143,35 @@ S -550 400 550 -400 0 1 0 N
 X GPIO1 1 -650 200 100 R 50 50 1 1 B
 X I2C_SDA 10 650 -200 100 L 50 50 1 1 B
 X SPI_CIPO 2 650 200 100 L 50 50 1 1 O
-X VDD 3 -650 100 100 R 50 50 1 1 W
+X GND 3 -650 100 100 R 50 50 1 1 W
 X SPI_COPI 4 650 100 100 L 50 50 1 1 I
 X NC 5 -650 0 100 R 50 50 1 1 N
 X SPI_CLK 6 650 0 100 L 50 50 1 1 I
-X GND 7 -650 -100 100 R 50 50 1 1 W
+X VDD 7 -650 -100 100 R 50 50 1 1 W
 X ~SPI_CS 8 650 -100 100 L 50 50 1 1 I
 X I2C_CLK 9 -650 -200 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# HH_Hochreiner_swd_connector
+# HH_Hochreiner_swd_connector_keyed
 #
-DEF HH_Hochreiner_swd_connector S 0 40 Y Y 1 F N
+DEF HH_Hochreiner_swd_connector_keyed S 0 40 Y Y 1 F N
 F0 "S" 350 -250 50 H V C CNN
-F1 "HH_Hochreiner_swd_connector" 0 300 50 H V C CNN
-F2 "HH_Hochreiner:swd_connector" 0 0 50 H I C CNN
+F1 "HH_Hochreiner_swd_connector_keyed" 0 300 50 H V C CNN
+F2 "HH_Hochreiner:SWD_BD050-06-A-0-0500-L-D" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "SAM10974-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
-F5 "Samtec Inc." 0 0 50 H I C CNN "Manufacturer"
-F6 "CLP-103-02-G-D-BE" 0 0 50 H I C CNN "Manufacturer Part Number"
-F7 "CONN RCPT 6POS 0.05 GOLD SMD" 0 0 50 H I C CNN "Description"
+F4 "2073-BD050-06-A-0-0500-L-D-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F5 "GCT" 0 0 50 H I C CNN "Manufacturer"
+F6 "BD050-06-A-0-0500-L-D" 0 0 50 H I C CNN "Manufacturer Part Number"
+F7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" 0 0 50 H I C CNN "Description"
 DRAW
 S -400 200 400 -200 0 1 0 N
 X GND 1 -600 -100 200 R 50 50 0 0 w
-X SWDIO 2 600 -100 200 L 50 50 0 0 B
+X ~RST 2 600 -100 200 L 50 50 0 0 O
 X NC 3 -600 0 200 R 50 50 0 0 N
 X SWCLK 4 600 0 200 L 50 50 0 0 O
 X VDD 5 -600 100 200 R 50 50 0 0 w
-X ~RST 6 600 100 200 L 50 50 0 0 O
+X SWDIO 6 600 100 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #

@@ -220,15 +220,15 @@ Connection ~ 5450 5850
 $Comp
 L power:GND #PWR0108
 U 1 1 5F904E15
-P 1150 4850
-F 0 "#PWR0108" H 1150 4600 50  0001 C CNN
-F 1 "GND" H 1155 4677 50  0000 C CNN
-F 2 "" H 1150 4850 50  0001 C CNN
-F 3 "" H 1150 4850 50  0001 C CNN
-	1    1150 4850
+P 1100 4650
+F 0 "#PWR0108" H 1100 4400 50  0001 C CNN
+F 1 "GND" H 1105 4477 50  0000 C CNN
+F 2 "" H 1100 4650 50  0001 C CNN
+F 3 "" H 1100 4650 50  0001 C CNN
+	1    1100 4650
 	1    0    0    -1  
 $EndComp
-Text HLabel 1650 4650 0    50   Input ~ 0
+Text HLabel 1650 4850 0    50   Input ~ 0
 VDD
 Text Label 2950 4750 0    50   ~ 0
 SPI_CLK
@@ -250,7 +250,7 @@ Text Label 4800 2650 2    50   ~ 0
 GPIO_1
 Text HLabel 7100 5700 0    50   Input ~ 0
 VDD
-Text Label 10500 5700 0    50   ~ 0
+Text Label 10500 5900 0    50   ~ 0
 ~RESET
 $Comp
 L power:GND #PWR0109
@@ -267,7 +267,7 @@ Wire Wire Line
 	8900 5900 9300 5900
 Text Label 10500 5800 0    50   ~ 0
 SWDCLK
-Text Label 10500 5900 0    50   ~ 0
+Text Label 10500 5700 0    50   ~ 0
 SWDIO
 Text Notes 3050 3950 2    100  ~ 20
 Sensor Connector
@@ -471,32 +471,17 @@ NoConn ~ 6600 2850
 NoConn ~ 6600 2950
 Text HLabel 4800 3350 0    50   Input ~ 0
 ~SNOOZE
-$Comp
-L HH_Hochreiner:swd_connector S2
-U 1 1 60246EFA
-P 9900 5800
-F 0 "S2" H 9900 6165 50  0000 C CNN
-F 1 "swd_connector" H 9900 6074 50  0000 C CNN
-F 2 "HH_Hochreiner:SWD_BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN
-F 3 "https://gct.co/files/drawings/bd050.pdf" H 9900 5800 50  0001 C CNN
-F 4 "2073-BD050-06-A-0-0500-L-D-ND" H 9900 5800 50  0001 C CNN "Digi-Key Part Number"
-F 5 "GCT" H 9900 5800 50  0001 C CNN "Manufacturer"
-F 6 "BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN "Manufacturer Part Number"
-F 7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" H 9900 5800 50  0001 C CNN "Description"
-	1    9900 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 4850 1150 4850
 NoConn ~ 4800 3650
 Wire Wire Line
 	8300 6250 8900 6250
 NoConn ~ 5600 4050
+Wire Wire Line
+	1100 4650 1650 4650
 $Comp
-L HH_Hochreiner:sensor_connector_keyed SC?
-U 1 1 60B6C2F4
+L HH_Hochreiner:sensor_connector_keyed SC1
+U 1 1 60B919AA
 P 2300 4750
-F 0 "SC?" H 2300 5315 50  0000 C CNN
+F 0 "SC1" H 2300 5315 50  0000 C CNN
 F 1 "sensor_connector_keyed" H 2300 5224 50  0000 C CNN
 F 2 "HH_Hochreiner:Sensor-Connector_BD050-10-A-0-0500-L-D" H 2300 4750 50  0001 C CNN
 F 3 "https://cdn.harwin.com/pdfs/C029XX_M50_and_M52_Series_Connectors.pdf" H 2300 4750 50  0001 C CNN
@@ -505,6 +490,21 @@ F 5 "GCT" H 2300 4750 50  0001 C CNN "Manufacturer"
 F 6 "BD050-10-A-0-0500-L-D" H 2300 4750 50  0001 C CNN "Manufacturer Part Number"
 F 7 "10W,1.27MM SOCKET,DIL, SMT,L/PRO" H 2300 4750 50  0001 C CNN "Description"
 	1    2300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L HH_Hochreiner:swd_connector_keyed S2
+U 1 1 60B93392
+P 9900 5800
+F 0 "S2" H 9900 6165 50  0000 C CNN
+F 1 "swd_connector_keyed" H 9900 6074 50  0000 C CNN
+F 2 "HH_Hochreiner:SWD_BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN
+F 3 "https://www.gct.co/files/drawings/BD050.pdf" H 9900 5800 50  0001 C CNN
+F 4 "2073-BD050-06-A-0-0500-L-D-ND" H 9900 5800 50  0001 C CNN "Digi-Key Part Number"
+F 5 "GCT" H 9900 5800 50  0001 C CNN "Manufacturer"
+F 6 "BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN "Manufacturer Part Number"
+F 7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" H 9900 5800 50  0001 C CNN "Description"
+	1    9900 5800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
