@@ -103,10 +103,10 @@ LSM303AGR
 This sensor worked fine with similar designs.
 Due to the internal pull-ups of the nRF52810, no external pull-ups are required.
 
-.. note::
+**Note**
 
-    The LSM303AGR is currently (June 2021) not available.
-    Therefore, additional footprints for additional sensors performing its functions were added.
+The LSM303AGR is currently (June 2021) not available.
+Therefore, additional footprints for additional sensors performing its functions were added.
 
 MMC5603NJ
 ---------
@@ -152,8 +152,3 @@ Over current protection did not work as intended as the resistance of the fuses 
 
 The footprints of both connectors had problems (although different ones).
 It was possible to scrape the pads of the programming connector free and subsequently program the module.
-
-TODOs
-=====
-
-* Add pull-up/down to snooze line.
