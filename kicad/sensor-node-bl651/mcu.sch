@@ -220,15 +220,15 @@ Connection ~ 5450 5850
 $Comp
 L power:GND #PWR0108
 U 1 1 5F904E15
-P 1150 4850
-F 0 "#PWR0108" H 1150 4600 50  0001 C CNN
-F 1 "GND" H 1155 4677 50  0000 C CNN
-F 2 "" H 1150 4850 50  0001 C CNN
-F 3 "" H 1150 4850 50  0001 C CNN
-	1    1150 4850
+P 1100 4650
+F 0 "#PWR0108" H 1100 4400 50  0001 C CNN
+F 1 "GND" H 1105 4477 50  0000 C CNN
+F 2 "" H 1100 4650 50  0001 C CNN
+F 3 "" H 1100 4650 50  0001 C CNN
+	1    1100 4650
 	1    0    0    -1  
 $EndComp
-Text HLabel 1650 4650 0    50   Input ~ 0
+Text HLabel 1650 4850 0    50   Input ~ 0
 VDD
 Text Label 2950 4750 0    50   ~ 0
 SPI_CLK
@@ -250,7 +250,7 @@ Text Label 4800 2650 2    50   ~ 0
 GPIO_1
 Text HLabel 7100 5700 0    50   Input ~ 0
 VDD
-Text Label 10500 5700 0    50   ~ 0
+Text Label 10500 5900 0    50   ~ 0
 ~RESET
 $Comp
 L power:GND #PWR0109
@@ -267,7 +267,7 @@ Wire Wire Line
 	8900 5900 9300 5900
 Text Label 10500 5800 0    50   ~ 0
 SWDCLK
-Text Label 10500 5900 0    50   ~ 0
+Text Label 10500 5700 0    50   ~ 0
 SWDIO
 Text Notes 3050 3950 2    100  ~ 20
 Sensor Connector
@@ -304,21 +304,6 @@ F 3 "~" H 9850 2550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 6600 3250
-$Comp
-L Device:Polyfuse F3
-U 1 1 601D34D6
-P 8600 6250
-F 0 "F3" V 8375 6250 50  0000 C CNN
-F 1 "Polyfuse" V 8466 6250 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 8650 6050 50  0001 L CNN
-F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcm-series.pdf" H 8600 6250 50  0001 C CNN
-F 4 "507-0ZCM0002FF2GCT-ND" V 8600 6250 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Bel Fuse Inc." V 8600 6250 50  0001 C CNN "Manufacturer"
-F 6 "0ZCM0002FF2G" V 8600 6250 50  0001 C CNN "Manufacturer Part Number"
-F 7 "PTC RESET FUSE 60V 20MA 0603" V 8600 6250 50  0001 C CNN "Description"
-	1    8600 6250
-	0    1    1    0   
-$EndComp
 $Comp
 L HH_DiodesIncorporated:DMP2008UFG-7 U1
 U 1 1 601D4951
@@ -441,27 +426,11 @@ Wire Wire Line
 Connection ~ 9850 2850
 Wire Wire Line
 	9850 2400 9850 2250
-Text Label 8800 2850 2    50   ~ 0
-V_sen1
 Text Label 8800 3400 2    50   ~ 0
-V_sen2
-Connection ~ 9650 2850
+V_sen
 Connection ~ 9650 3400
 Text Label 5700 4050 3    50   ~ 0
-V_sen2
-Text Label 5600 4050 3    50   ~ 0
-V_sen1
-$Comp
-L Device:C C6
-U 1 1 6021C849
-P 9400 3850
-F 0 "C6" V 9148 3850 50  0000 C CNN
-F 1 "0.1µF 0603 16V" V 9239 3850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3700 50  0001 C CNN
-F 3 "~" H 9400 3850 50  0001 C CNN
-	1    9400 3850
-	-1   0    0    1   
-$EndComp
+V_sen
 $Comp
 L Device:C C5
 U 1 1 6021D148
@@ -476,13 +445,6 @@ $EndComp
 Wire Wire Line
 	8800 3400 9000 3400
 Wire Wire Line
-	8800 2850 9400 2850
-Wire Wire Line
-	9400 3700 9400 2850
-Connection ~ 9400 2850
-Wire Wire Line
-	9400 2850 9650 2850
-Wire Wire Line
 	9000 3700 9000 3400
 Connection ~ 9000 3400
 Wire Wire Line
@@ -495,8 +457,6 @@ Wire Wire Line
 	9850 3800 9850 4250
 Connection ~ 9400 4250
 Wire Wire Line
-	9400 4250 9400 4000
-Wire Wire Line
 	9400 4250 9000 4250
 Wire Wire Line
 	9000 4250 9000 4000
@@ -504,48 +464,48 @@ Text Notes 10150 1650 2    100  ~ 20
 V_bat Measurement
 Wire Wire Line
 	8400 5700 9300 5700
-Wire Wire Line
-	8300 6250 8450 6250
 Connection ~ 8300 6250
-Wire Wire Line
-	8750 6250 8900 6250
-NoConn ~ 6600 3050
 NoConn ~ 6600 2250
 NoConn ~ 6600 2850
 NoConn ~ 6600 2950
 Text HLabel 4800 3350 0    50   Input ~ 0
-UVLO
-$Comp
-L HH_Hochreiner:swd_connector S2
-U 1 1 60246EFA
-P 9900 5800
-F 0 "S2" H 9900 6165 50  0000 C CNN
-F 1 "swd_connector" H 9900 6074 50  0000 C CNN
-F 2 "HH_Hochreiner:swd_connector" H 9900 5800 50  0001 C CNN
-F 3 "http://suddendocs.samtec.com/catalog_english/clp_sm.pdf" H 9900 5800 50  0001 C CNN
-F 4 "SAM10974-ND" H 9900 5800 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Samtec Inc." H 9900 5800 50  0001 C CNN "Manufacturer"
-F 6 "CLP-103-02-G-D-BE" H 9900 5800 50  0001 C CNN "Manufacturer Part Number"
-F 7 "CONN RCPT 6POS 0.05 GOLD SMD" H 9900 5800 50  0001 C CNN "Description"
-	1    9900 5800
-	1    0    0    -1  
-$EndComp
+~SNOOZE
+NoConn ~ 4800 3650
+Wire Wire Line
+	8300 6250 8900 6250
+NoConn ~ 5600 4050
+Wire Wire Line
+	1100 4650 1650 4650
 $Comp
 L HH_Hochreiner:sensor_connector_keyed SC1
-U 1 1 6025A1AC
+U 1 1 60B919AA
 P 2300 4750
 F 0 "SC1" H 2300 5315 50  0000 C CNN
 F 1 "sensor_connector_keyed" H 2300 5224 50  0000 C CNN
-F 2 "HH_Hochreiner:sensor_connector_M50-3150542R_keyed" H 2300 4750 50  0001 C CNN
+F 2 "HH_Hochreiner:Sensor-Connector_BD050-10-A-0-0500-L-D" H 2300 4750 50  0001 C CNN
 F 3 "https://cdn.harwin.com/pdfs/C029XX_M50_and_M52_Series_Connectors.pdf" H 2300 4750 50  0001 C CNN
-F 4 "952-3493-1-ND" H 2300 4750 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Harwin Inc." H 2300 4750 50  0001 C CNN "Manufacturer"
-F 6 "M50-3150542R" H 2300 4750 50  0001 C CNN "Manufacturer Part Number"
-F 7 "CONN RCPT 10POS 0.05 GOLD SMD" H 2300 4750 50  0001 C CNN "Description"
+F 4 "2073-BD050-10-A-0-0500-L-D-ND" H 2300 4750 50  0001 C CNN "Digi-Key Part Number"
+F 5 "GCT" H 2300 4750 50  0001 C CNN "Manufacturer"
+F 6 "BD050-10-A-0-0500-L-D" H 2300 4750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "10W,1.27MM SOCKET,DIL, SMT,L/PRO" H 2300 4750 50  0001 C CNN "Description"
 	1    2300 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 4850 1150 4850
-NoConn ~ 4800 3650
+$Comp
+L HH_Hochreiner:swd_connector_keyed S2
+U 1 1 60B93392
+P 9900 5800
+F 0 "S2" H 9900 6165 50  0000 C CNN
+F 1 "swd_connector_keyed" H 9900 6074 50  0000 C CNN
+F 2 "HH_Hochreiner:SWD_BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN
+F 3 "https://www.gct.co/files/drawings/BD050.pdf" H 9900 5800 50  0001 C CNN
+F 4 "2073-BD050-06-A-0-0500-L-D-ND" H 9900 5800 50  0001 C CNN "Digi-Key Part Number"
+F 5 "GCT" H 9900 5800 50  0001 C CNN "Manufacturer"
+F 6 "BD050-06-A-0-0500-L-D" H 9900 5800 50  0001 C CNN "Manufacturer Part Number"
+F 7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" H 9900 5800 50  0001 C CNN "Description"
+	1    9900 5800
+	1    0    0    -1  
+$EndComp
+Text HLabel 6600 3050 2    50   Input ~ 0
+INT_M_XL
 $EndSCHEMATC

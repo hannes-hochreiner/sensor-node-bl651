@@ -253,4 +253,126 @@ Wire Wire Line
 Connection ~ 4850 3400
 Wire Wire Line
 	4850 3400 5500 3400
+$Comp
+L HH_Memsic:MXC4005XC M2
+U 1 1 60BA1560
+P 9800 5350
+F 0 "M2" H 9800 5765 50  0000 C CNN
+F 1 "MXC4005XC" H 9800 5674 50  0000 C CNN
+F 2 "HH_Memsic:MXC400xXC" H 9800 5350 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/MEMSIC%20PDFs/MXC400xXC_Rev.B_4-24-15.pdf" H 9800 5350 50  0001 C CNN
+F 4 "1267-1075-1-ND" H 9800 5350 50  0001 C CNN "Digi-Key Part Number"
+F 5 "Memsic Inc." H 9800 5350 50  0001 C CNN "Manufacturer"
+F 6 "MXC4005XC" H 9800 5350 50  0001 C CNN "Manufacturer Part Number"
+F 7 "THREE AXIS ACCELEROMETER" H 9800 5350 50  0001 C CNN "Description"
+	1    9800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 60BA9A12
+P 8900 5500
+F 0 "C11" H 9015 5546 50  0000 L CNN
+F 1 "1µF 0603" H 9015 5455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 5350 50  0001 C CNN
+F 3 "~" H 8900 5500 50  0001 C CNN
+	1    8900 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5350 9350 5350
+Wire Wire Line
+	9350 5500 9350 5900
+Wire Wire Line
+	9350 5900 9150 5900
+Wire Wire Line
+	8900 5900 8900 5650
+$Comp
+L power:GND #PWR010
+U 1 1 60BABF47
+P 9150 5900
+F 0 "#PWR010" H 9150 5650 50  0001 C CNN
+F 1 "GND" H 9155 5727 50  0000 C CNN
+F 2 "" H 9150 5900 50  0001 C CNN
+F 3 "" H 9150 5900 50  0001 C CNN
+	1    9150 5900
+	1    0    0    -1  
+$EndComp
+Connection ~ 9150 5900
+Wire Wire Line
+	9150 5900 8900 5900
+Text HLabel 8450 5350 0    50   Input ~ 0
+VDD
+Wire Wire Line
+	8900 5350 8450 5350
+Connection ~ 8900 5350
+Text HLabel 10250 5350 2    50   Input ~ 0
+SDA
+Text HLabel 10250 5200 2    50   Input ~ 0
+SCL
+Text HLabel 10250 5500 2    50   Input ~ 0
+INT_M_XL
+Text Notes 8650 4750 0    96   ~ 19
+Memsic Accelerometer
+$Comp
+L HH_Memsic:MMC5603NJ M1
+U 1 1 60BAED17
+P 3400 6100
+F 0 "M1" H 3400 6465 50  0000 C CNN
+F 1 "MMC5603NJ" H 3400 6374 50  0000 C CNN
+F 2 "HH_Memsic:MMC5603NJ" H 3400 6100 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/MEMSIC%20PDFs/MMC5603NJ_RevB_7-12-18.pdf" H 3400 6100 50  0001 C CNN
+F 4 "1267-MMC5603NJCT-ND" H 3400 6100 50  0001 C CNN "Digi-Key Part Number"
+F 5 "Memsic Inc." H 3400 6100 50  0001 C CNN "Manufacturer"
+F 6 "MMC5603NJ" H 3400 6100 50  0001 C CNN "Manufacturer Part Number"
+F 7 "3-AXIS AMR MAGNETIC SENSOR" H 3400 6100 50  0001 C CNN "Description"
+	1    3400 6100
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 5450 0    96   ~ 19
+Memsic Magnetic Sensor
+$Comp
+L Device:C C6
+U 1 1 60BB6732
+P 2600 6350
+F 0 "C6" H 2715 6396 50  0000 L CNN
+F 1 "2.2µF 0603" H 2715 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 6200 50  0001 C CNN
+F 3 "~" H 2600 6350 50  0001 C CNN
+	1    2600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 60BB7121
+P 2300 6700
+F 0 "#PWR09" H 2300 6450 50  0001 C CNN
+F 1 "GND" H 2305 6527 50  0000 C CNN
+F 2 "" H 2300 6700 50  0001 C CNN
+F 3 "" H 2300 6700 50  0001 C CNN
+	1    2300 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6700 2300 6600
+Wire Wire Line
+	2300 6000 2950 6000
+Wire Wire Line
+	2600 6500 2600 6600
+Wire Wire Line
+	2600 6600 2300 6600
+Connection ~ 2300 6600
+Wire Wire Line
+	2300 6600 2300 6000
+Text HLabel 1950 6200 0    50   Input ~ 0
+VDD
+Wire Wire Line
+	1950 6200 2600 6200
+Connection ~ 2600 6200
+Wire Wire Line
+	2600 6200 2950 6200
+Text HLabel 3850 6000 2    50   Input ~ 0
+SCL
+Text HLabel 3850 6200 2    50   Input ~ 0
+SDA
 $EndSCHEMATC

@@ -14,13 +14,14 @@ Reverse polarity protection is provided by a P-channel MOSFET connecting the dra
 Over current protection
 -----------------------
 
-Over current protection is provided by resettable fuses.
+Over current protection is provided by the DC-DC-converter.
+The short circuit current is max 150 mA @ about 2 V (1/3 W).
 
 Under voltage protection
 ------------------------
 
 Since the idea is to use the system with NiMH batteries, care has to be taken to not discharge them below 1.1 V.
-Under voltage protection will be provided by the MCU by actively measuring the battery voltage.
+Under voltage protection will be provided by the MCU by actively measuring the battery voltage and going into sleep mode once the threshold is reached.
 This method comes with a higher risk, as the MCU has to actively measure the voltage and react to under voltage conditions.
 
 Design
@@ -76,23 +77,16 @@ R2 can then be calculated to be 10 MOhm.
 
     2/3 R1 = R2 = 10 MOhm
 
-Resettable Fuses
-----------------
-
-The maximum current expected on the load side is a little bit more than 10 mA at 2.2 V.
-Hence, a fuse with 20 mA hold current was chosen.
-
-TPS61098X
----------
+TPS60313DGS
+-----------
 
 The passives were used as given in the example circuit.
+Since the second output is not being used, the decoupling capacitors for this output were not added.
 
-Under voltage lock-out
-----------------------
+Connectors
+----------
 
-One of the GPIO pins of the MCU was connected to the gate of the MOSFET used to protect the circuit from reverse polarity.
-The idea is that the MCU can pull the pin high to cut the power supply.
-Given that the body diode forward voltage is 0.7 and the gate-source threshold is 0.4 V, it should not be possible to open the MOSFET below 1.1 V.
+Minimum pin length for the bottom entry connectors is 3.15 mm.
 
 Sensors
 =======
@@ -109,26 +103,46 @@ LSM303AGR
 This sensor worked fine with similar designs.
 Due to the internal pull-ups of the nRF52810, no external pull-ups are required.
 
+**Note**
+
+The LSM303AGR is currently (June 2021) not available.
+Therefore, additional footprints for additional sensors performing its functions were added.
+
+MMC5603NJ
+---------
+
+This sensor replaces the magnetic sensor contained in the LSM303AGR.
+
+MXC4005XC
+---------
+
+This sensor replaces the accelerometer contained in the LSM303AGR.
+
+
 Tests
 =====
 
-+-----------------------------+--------+
-|                        Unit | V1.0.0 |
-+=============================+========+
-|                       Power |   OK   |
-+-----------------------------+--------+
-| Reverse polarity protection |   OK   |
-+-----------------------------+--------+
-|     Over current protection | Note 1 |
-+-----------------------------+--------+
-|    Under voltage protection |   tbt  |
-+-----------------------------+--------+
-|                       SHT4x |   tbt  |
-+-----------------------------+--------+
-|                   LSM303AGR |   tbt  |
-+-----------------------------+--------+
-|                  Connectors | Note 2 |
-+-----------------------------+--------+
++-----------------------------+--------+--------+
+|                        Unit | V1.0.0 | V1.1.0 |
++=============================+========+========+
+|                       Power |   OK   |        |
++-----------------------------+--------+--------+
+| Reverse polarity protection |   OK   |        |
++-----------------------------+--------+--------+
+|     Over current protection | Note 1 |        |
++-----------------------------+--------+--------+
+|    Under voltage protection |   tbt  |        |
++-----------------------------+--------+--------+
+|                       SHT4x |   tbt  |        |
++-----------------------------+--------+--------+
+|                   LSM303AGR |   tbt  |        |
++-----------------------------+--------+--------+
+|                   MMC5603NJ |   tbt  |        |
++-----------------------------+--------+--------+
+|                   MXC4005XC |   tbt  |        |
++-----------------------------+--------+--------+
+|                  Connectors | Note 2 |        |
++-----------------------------+--------+--------+
 
 **Note 1**
 

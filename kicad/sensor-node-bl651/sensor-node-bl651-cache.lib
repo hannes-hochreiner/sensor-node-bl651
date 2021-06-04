@@ -59,49 +59,6 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
-#
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Polyfuse
-#
-DEF Device_Polyfuse F 0 0 N Y 1 F N
-F0 "F" -100 0 50 V V C CNN
-F1 "Device_Polyfuse" 100 0 50 V V C CNN
-F2 "" 50 -200 50 H I L CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- *polyfuse*
- *PTC*
-$ENDFPLIST
-DRAW
-S -30 100 30 -100 0 1 10 N
-P 2 0 1 0 0 100 0 -100 N
-P 4 0 1 0 -60 100 -60 60 60 -60 60 -100 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -175,46 +132,46 @@ ENDDEF
 DEF HH_Hochreiner_sensor_connector_keyed SC 0 40 Y Y 1 F N
 F0 "SC" 450 -450 50 H V C CNN
 F1 "HH_Hochreiner_sensor_connector_keyed" 0 0 50 V V C CNN
-F2 "HH_Hochreiner:sensor_connector_M50-3150542R_keyed" 0 0 50 H I C CNN
+F2 "HH_Hochreiner:Sensor-Connector_BD050-10-A-0-0500-L-D" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "952-3493-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
-F5 "Harwin Inc." 0 0 50 H I C CNN "Manufacturer"
-F6 "M50-3150542R" 0 0 50 H I C CNN "Manufacturer Part Number"
-F7 "CONN RCPT 10POS 0.05 GOLD SMD" 0 0 50 H I C CNN "Description"
+F4 "2073-BD050-10-A-0-0500-L-D-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F5 "GCT" 0 0 50 H I C CNN "Manufacturer"
+F6 "BD050-10-A-0-0500-L-D" 0 0 50 H I C CNN "Manufacturer Part Number"
+F7 "10W,1.27MM SOCKET,DIL, SMT,L/PRO" 0 0 50 H I C CNN "Description"
 DRAW
 S -550 400 550 -400 0 1 0 N
 X GPIO1 1 -650 200 100 R 50 50 1 1 B
 X I2C_SDA 10 650 -200 100 L 50 50 1 1 B
 X SPI_CIPO 2 650 200 100 L 50 50 1 1 O
-X VDD 3 -650 100 100 R 50 50 1 1 W
+X GND 3 -650 100 100 R 50 50 1 1 W
 X SPI_COPI 4 650 100 100 L 50 50 1 1 I
 X NC 5 -650 0 100 R 50 50 1 1 N
 X SPI_CLK 6 650 0 100 L 50 50 1 1 I
-X GND 7 -650 -100 100 R 50 50 1 1 W
+X VDD 7 -650 -100 100 R 50 50 1 1 W
 X ~SPI_CS 8 650 -100 100 L 50 50 1 1 I
 X I2C_CLK 9 -650 -200 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# HH_Hochreiner_swd_connector
+# HH_Hochreiner_swd_connector_keyed
 #
-DEF HH_Hochreiner_swd_connector S 0 40 Y Y 1 F N
+DEF HH_Hochreiner_swd_connector_keyed S 0 40 Y Y 1 F N
 F0 "S" 350 -250 50 H V C CNN
-F1 "HH_Hochreiner_swd_connector" 0 300 50 H V C CNN
-F2 "HH_Hochreiner:swd_connector" 0 0 50 H I C CNN
+F1 "HH_Hochreiner_swd_connector_keyed" 0 300 50 H V C CNN
+F2 "HH_Hochreiner:SWD_BD050-06-A-0-0500-L-D" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "SAM10974-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
-F5 "Samtec Inc." 0 0 50 H I C CNN "Manufacturer"
-F6 "CLP-103-02-G-D-BE" 0 0 50 H I C CNN "Manufacturer Part Number"
-F7 "CONN RCPT 6POS 0.05 GOLD SMD" 0 0 50 H I C CNN "Description"
+F4 "2073-BD050-06-A-0-0500-L-D-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F5 "GCT" 0 0 50 H I C CNN "Manufacturer"
+F6 "BD050-06-A-0-0500-L-D" 0 0 50 H I C CNN "Manufacturer Part Number"
+F7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" 0 0 50 H I C CNN "Description"
 DRAW
 S -400 200 400 -200 0 1 0 N
 X GND 1 -600 -100 200 R 50 50 0 0 w
-X SWDIO 2 600 -100 200 L 50 50 0 0 B
+X ~RST 2 600 -100 200 L 50 50 0 0 O
 X NC 3 -600 0 200 R 50 50 0 0 N
 X SWCLK 4 600 0 200 L 50 50 0 0 O
 X VDD 5 -600 100 200 R 50 50 0 0 w
-X ~RST 6 600 100 200 L 50 50 0 0 O
+X SWDIO 6 600 100 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
@@ -273,6 +230,48 @@ X P0.18 9 900 -50 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# HH_Memsic_MMC5603NJ
+#
+DEF HH_Memsic_MMC5603NJ M 0 40 Y Y 1 F N
+F0 "M" 150 -250 50 H V C CNN
+F1 "HH_Memsic_MMC5603NJ" 0 250 50 H V C CNN
+F2 "HH_Memsic:MMC5603NJ" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "1267-MMC5603NJCT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F5 "Memsic Inc." 0 0 50 H I C CNN "Manufacturer"
+F6 "MMC5603NJ" 0 0 50 H I C CNN "Manufacturer Part Number"
+F7 "3-AXIS AMR MAGNETIC SENSOR" 0 0 50 H I C CNN "Description"
+DRAW
+S -250 200 250 -200 0 1 0 N
+X GND A1 -450 100 200 R 50 50 0 0 W
+X SCL A2 450 100 200 L 50 50 0 0 I
+X VDD B1 -450 -100 200 R 50 50 0 0 W
+X SDA B2 450 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# HH_Memsic_MXC4005XC
+#
+DEF HH_Memsic_MXC4005XC M 0 40 Y Y 1 F N
+F0 "M" 200 -300 50 H V C CNN
+F1 "HH_Memsic_MXC4005XC" 0 350 50 H V C CNN
+F2 "HH_Memsic:MXC400xXC" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "1267-1075-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F5 "Memsic Inc." 0 0 50 H I C CNN "Manufacturer"
+F6 "MXC4005XC" 0 0 50 H I C CNN "Manufacturer Part Number"
+F7 "THREE AXIS ACCELEROMETER" 0 0 50 H I C CNN "Description"
+DRAW
+S -250 250 250 -250 0 1 0 N
+X SCL 1 450 150 200 L 50 50 0 0 I
+X NC 2 -450 150 200 R 50 50 0 0 N
+X GND 3 -450 -150 200 R 50 50 0 0 W
+X INT 4 450 -150 200 L 50 50 0 0 O
+X SDA 5 450 0 200 L 50 50 0 0 B
+X VDD 6 -450 0 200 R 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
 # HH_STMicroelectronics_LSM303AGR
 #
 DEF HH_STMicroelectronics_LSM303AGR U 0 40 Y Y 1 F N
@@ -321,25 +320,29 @@ X VSS 4 450 100 200 L 50 50 0 0 W
 ENDDRAW
 ENDDEF
 #
-# HH_TexasInstruments_TPS61098x
+# HH_TexasInstruments_TPS6031x
 #
-DEF HH_TexasInstruments_TPS61098x P 0 40 Y Y 1 F N
-F0 "P" 0 -300 50 H V C CNN
-F1 "HH_TexasInstruments_TPS61098x" 0 300 50 H V C CNN
-F2 "HH_TexasInstruments:TPS61098x" 0 0 50 H I C CNN
+DEF HH_TexasInstruments_TPS6031x T 0 40 Y Y 1 F N
+F0 "T" 0 0 50 H V C CNN
+F1 "HH_TexasInstruments_TPS6031x" 0 450 50 H V C CNN
+F2 "Package_SO:MSOP-10_3x3mm_P0.5mm" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "296-43747-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F4 "296-13417-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
 F5 "Texas Instruments" 0 0 50 H I C CNN "Manufacturer"
-F6 "TPS610985DSET" 0 0 50 H I C CNN "Manufacturer Part Number"
-F7 "IC REG DL BOOST/LNR SYNC 6WSON" 0 0 50 H I C CNN "Description"
+F6 "TPS60313DGSR" 0 0 50 H I C CNN "Manufacturer Part Number"
+F7 "IC REG CHRG PUMP 2VIN/3V 10VSSOP" 0 0 50 H I C CNN "Description"
 DRAW
-S -450 250 450 -250 0 1 0 N
-X VMAIN 1 650 150 200 L 50 50 0 0 w
-X SW 2 -650 150 200 R 50 50 0 0 P
-X VIN 3 -650 0 200 R 50 50 0 0 W
-X MODE 4 -650 -150 200 R 50 50 0 0 I
-X VSUB 5 650 0 200 L 50 50 0 0 w
-X GND 6 650 -150 200 L 50 50 0 0 W
+S -500 350 500 -400 0 1 0 N
+X ~SNOOZE 1 -700 200 200 R 50 50 0 0 I
+X PG 10 700 -250 200 L 50 50 0 0 O
+X C1- 2 700 200 200 L 50 50 0 0 P
+X V_IN 3 -700 50 200 R 50 50 0 0 W
+X C1+ 4 700 100 200 L 50 50 0 0 P
+X OUT1 5 -700 -50 200 R 50 50 0 0 w
+X OUT2 6 -700 -150 200 R 50 50 0 0 w
+X C2+ 7 700 -100 200 L 50 50 0 0 P
+X C2- 8 700 0 200 L 50 50 0 0 P
+X GND 9 -700 -250 200 R 50 50 0 0 W
 ENDDRAW
 ENDDEF
 #
