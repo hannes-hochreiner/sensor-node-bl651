@@ -125,23 +125,23 @@ Tests
 +-----------------------------+--------+--------+
 |                        Unit | V1.0.0 | V1.1.0 |
 +=============================+========+========+
-|                       Power |   OK   |        |
+|                       Power |   OK   |   OK   |
 +-----------------------------+--------+--------+
-| Reverse polarity protection |   OK   |        |
+| Reverse polarity protection |   OK   |   OK   |
 +-----------------------------+--------+--------+
-|     Over current protection | Note 1 |        |
+|     Over current protection | Note 1 | Note 3 |
 +-----------------------------+--------+--------+
-|    Under voltage protection |   tbt  |        |
+|    Under voltage protection |   tbt  |   OK   |
 +-----------------------------+--------+--------+
-|                       SHT4x |   tbt  |        |
+|                       SHT4x |   tbt  |   OK   |
 +-----------------------------+--------+--------+
-|                   LSM303AGR |   tbt  |        |
+|                   LSM303AGR |   tbt  | Note 4 |
 +-----------------------------+--------+--------+
-|                   MMC5603NJ |   tbt  |        |
+|                   MMC5603NJ |   tbt  |   OK   |
 +-----------------------------+--------+--------+
-|                   MXC4005XC |   tbt  |        |
+|                   MXC4005XC |   tbt  | Note 5 |
 +-----------------------------+--------+--------+
-|                  Connectors | Note 2 |        |
+|                  Connectors | Note 2 |   OK   |
 +-----------------------------+--------+--------+
 
 **Note 1**
@@ -152,3 +152,17 @@ Over current protection did not work as intended as the resistance of the fuses 
 
 The footprints of both connectors had problems (although different ones).
 It was possible to scrape the pads of the programming connector free and subsequently program the module.
+
+** Note 3**
+
+Over current protection is provided by the DC/DC converter, but was not tested.
+
+** Note 4**
+
+The LSM303AGR is not available at the moment (summer 2021).
+
+** Note 5**
+
+It was not possible to read the markings on the MXC4005XC.
+There was a 50% chance of getting the orientation right.
+The chip did not pass the smoke test.
