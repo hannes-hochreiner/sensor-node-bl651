@@ -3,6 +3,8 @@ Sensor Node BL651
 
 The goal of this project is to create a simple sensor node based on the BL651 module running on a single AAA battery.
 
+.. image:: pictures/V1_1_0_assembled.jpg
+
 Safety Measures
 ===============
 
@@ -118,6 +120,13 @@ MXC4005XC
 
 This sensor replaces the accelerometer contained in the LSM303AGR.
 
+Programming
+===========
+
+The firmware for this device can be found in the repository `hannes-hochreiner/sensor-net-nrf52810-firmware <https://github.com/hannes-hochreiner/sensor-net-nrf52810-firmware>`_.
+A suitable programming connector can be found in the repository `hannes-hochreiner/swd-adapter <https://github.com/hannes-hochreiner/swd-adapter>`_.
+
+.. image:: pictures/V1_1_0_programming.jpg
 
 Tests
 =====
