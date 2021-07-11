@@ -162,15 +162,15 @@ Over current protection did not work as intended as the resistance of the fuses 
 The footprints of both connectors had problems (although different ones).
 It was possible to scrape the pads of the programming connector free and subsequently program the module.
 
-** Note 3**
+**Note 3**
 
 Over current protection is provided by the DC/DC converter, but was not tested.
 
-** Note 4**
+**Note 4**
 
 The LSM303AGR is not available at the moment (summer 2021).
 
-** Note 5**
+**Note 5**
 
 It was not possible to read the markings on the MXC4005XC.
 There was a 50% chance of getting the orientation right.
