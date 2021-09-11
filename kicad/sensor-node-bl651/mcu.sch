@@ -263,8 +263,6 @@ F 3 "" H 8300 6250 50  0001 C CNN
 	1    8300 6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 5900 9300 5900
 Text Label 10500 5800 0    50   ~ 0
 SWDCLK
 Text Label 10500 5700 0    50   ~ 0
@@ -325,8 +323,6 @@ Wire Wire Line
 	7350 6000 7350 6250
 Wire Wire Line
 	7350 6250 8300 6250
-Wire Wire Line
-	8900 5900 8900 6250
 Wire Wire Line
 	8400 5700 8400 5800
 Wire Wire Line
@@ -464,15 +460,10 @@ Text Notes 10150 1650 2    100  ~ 20
 V_bat Measurement
 Wire Wire Line
 	8400 5700 9300 5700
-Connection ~ 8300 6250
 NoConn ~ 6600 2250
 NoConn ~ 6600 2850
 NoConn ~ 6600 2950
-Text HLabel 4800 3350 0    50   Input ~ 0
-~SNOOZE
 NoConn ~ 4800 3650
-Wire Wire Line
-	8300 6250 8900 6250
 NoConn ~ 5600 4050
 Wire Wire Line
 	1100 4650 1650 4650
@@ -508,4 +499,29 @@ F 7 "6W,1.27MM SOCKET,DIL, SMT,L/PROF" H 9900 5800 50  0001 C CNN "Description"
 $EndComp
 Text HLabel 6600 3050 2    50   Input ~ 0
 INT_M_XL
+NoConn ~ 4800 3350
+$Comp
+L Device:Fuse F2
+U 1 1 613D5DB1
+P 8800 6250
+F 0 "F2" V 8603 6250 50  0000 C CNN
+F 1 "Fuse" V 8694 6250 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric" V 8730 6250 50  0001 C CNN
+F 3 "https://datasheets.avx.com/AccuGuardLC_0402.pdf" H 8800 6250 50  0001 C CNN
+F 4 "478-6871-1-ND" V 8800 6250 50  0001 C CNN "Digi-Key Part Number"
+F 5 "AVX Corporation" V 8800 6250 50  0001 C CNN "Manufacturer"
+F 6 "F0603G0R05FNTR" V 8800 6250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "FUSE BOARD MOUNT 50MA 32VDC 0603" V 8800 6250 50  0001 C CNN "Description"
+	1    8800 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 6250 9150 6250
+Wire Wire Line
+	9150 6250 9150 5900
+Wire Wire Line
+	9150 5900 9300 5900
+Wire Wire Line
+	8650 6250 8300 6250
+Connection ~ 8300 6250
 $EndSCHEMATC
